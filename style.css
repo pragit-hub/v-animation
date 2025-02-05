@@ -1,62 +1,86 @@
 *{
     overflow: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
-canvas {
-    position: absolute;
-    z-index: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.smoke {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Tangerine');
+  canvas{position:absolute;z-index:0;width:100%;}
+  .smoke {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: fade 13s;
-}
-
-@keyframes fade{
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.smoke span {
+    animation:fade 13s;
+  }
+  @keyframes fade{
+    0%{opacity:0}
+    100%{opacity:1}
+  }
+  .smoke span {
+  
     position: relative;
-    color: hsl(350, 100%, 50%);
-    font-family: 'Tangerine', cursive;
-    font-size: 2.5em;
+    color: #ffffffe1;
+    font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 10px;
-    animation: animate 6s cubic-bezier(0, 0.98, 0.58, 1) infinite;
-}
+  font-family: 'Tangerine', cursive;
+    font-size: 2.5em;
+  animation: animate 6s cubic-bezier(0, 0.98, 0.58, 1) infinite;
+  
+  }
+  
+  .smoke span:nth-child(1) {
+    animation-delay: 0s;
+    color:#ffffffe1
+  
+  }
+  .smoke span:nth-child(2) {
+    animation-delay: 0.1s;
+   
+  }
+  .smoke span:nth-child(3) {
+    animation-delay: 0.2s;
+    color:#ffffffe1
+   
+  }
+  .smoke span:nth-child(4) {
+    animation-delay: 0.3s; 
+  }
+  
+  
+  @keyframes fade{
+    0%{opacity:0}
+    100%{opacity:1}
+  }
 
-.smoke span:nth-child(1) { animation-delay: 0s; }
-.smoke span:nth-child(2) { animation-delay: 0.1s; }
-.smoke span:nth-child(3) { animation-delay: 0.2s; }
-.smoke span:nth-child(4) { animation-delay: 0.3s; }
-
-@keyframes animate {
-    0% {}
-    40% {}
-    80% {}
-    100% {}
-}
+  @keyframes animate {
+    0%
+    {
+      
+    }
+    0%
+    {
+      
+    }
+    40%
+    { 
+      
+    }
+    80%
+    {
+      
+    }
+    100%
+    {
+      
+    }
+  }
+  
+  
